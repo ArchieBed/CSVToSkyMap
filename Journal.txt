@@ -1,0 +1,32 @@
+May 13 2026:
+So yeah, we are currency in week 4 of the innovative solutions. I have currently set up the overall project in terms of discussing the problem. 
+I’ve set up the gantt chart for the project and now I'm just about to gather the data for the problem. 
+I'm gonna use the data to help create a solution to the chosen problem. There are four methods of data collection I am going to use. 
+Observation, Interview, Survey and Reports. In terms of Observations I will sit with researchers and observe their day to day actions. 
+With the interview I'll sit down with one of them and discuss the pre-made questions. 
+The survey will be handed out to complete and the reports will be sourced from pre made observations. 
+I'm really just hoping to collect data about their daya to day experience analysing sets of data.
+
+
+
+
+May 19 2026:
+I've collected all the data needed now. I'm currently just formatting it to work with the file to make it more organised. 
+In terms of the interview, it seems like the standard file is FITS. 
+Though because the data we are analysing is not FITS, we can use the next best thing which was said in the survey which was CSV files. 
+It seems like the normal workflow is to take the raw data and filter it, then convert it into an image given by the step by step approach said during the interview.
+
+1.Collect or download raw telescope data
+2.Calibrate the data to remove instrumental noise
+3.Filter radio-frequency interference (RFI)
+4.Convert the data into usable spectra or images
+5.Run detection algorithms or visually inspect anomalies
+6.Compare against known catalogues
+7.Produce visualisations and statistical summaries
+
+In terms of the time it takes can vary depending on the size of the project and file. 
+Now for the amount of people to actually analyse the data could also vary depending on the size. 
+It also seems that the interview kept referencing astropy. https://www.astropy.org/. In the next question it seems that the interviewer uses stellarium which is good for me. 
+In the next question it seems they also want an integration with a sky map and data mainly to reduce time and compare data quickly. 
+And then in the last question it shows that AI is being used to detect anomalies.
+

@@ -1,0 +1,156 @@
+1. What kind of data do you collect from radio telescopes (file type, frequency, objects, mapping)?
+Most of the data I work with comes in FITS files (Flexible Image Transport System), which is basically the astronomy standard for storing scientific image and signal data. Sometimes raw voltage or spectral data is stored in binary formats before being converted into FITS cubes or measurement sets.
+The data usually includes:
+Signal intensity over time
+Frequency spectra
+Polarisation data
+Interferometry visibility data (for telescope arrays)
+Sky coordinates and timing metadata
+The frequencies depend on the target:
+Hydrogen line observations are commonly around 1420 MHz
+Pulsars can be observed anywhere from a few hundred MHz up to several GHz
+Solar observations often use lower frequencies
+Continuum galaxy mapping may span wide radio bands
+Objects commonly observed include:
+Pulsars
+Hydrogen clouds
+The Milky Way
+Supernova remnants
+Radio galaxies and quasars
+The Sun and Jupiter
+Fast Radio Bursts (FRBs)
+For mapping, we often generate:
+Intensity maps
+Spectral cubes
+Heatmaps of signal strength
+Sky mosaics
+Time-domain waterfall plots
+
+2. What is your normal method when analysing said data?
+A normal workflow looks something like this:
+Collect or download raw telescope data
+Calibrate the data to remove instrumental noise
+Filter radio-frequency interference (RFI)
+Convert the data into usable spectra or images
+Run detection algorithms or visually inspect anomalies
+Compare against known catalogues
+Produce visualisations and statistical summaries
+For interferometry arrays, there is usually an imaging stage where visibilities are transformed using Fourier methods into sky images.
+Common tools include:
+Python
+NumPy
+SciPy
+CASA
+DS9
+Astropy
+PRESTO (for pulsars)
+GNU Radio for SDR systems
+A lot of analysis is semi-automated, but humans still verify unusual detections.
+
+3. How long does analysing the data take on average?
+It varies massively depending on the project.
+For hobby-level SDR radio astronomy:
+A few minutes to a few hours
+For university or observatory datasets:
+Several hours to days
+For large survey projects:
+Weeks or even months
+The longest part is usually:
+Cleaning noisy data
+RFI removal
+Processing huge datasets
+Verifying candidate detections
+Modern telescope arrays generate terabytes of data very quickly, so storage and processing become major bottlenecks.
+
+4. When analysing data, on average, how many people does it take to analyse the data with you?
+For hobby projects:
+Usually just one person
+For small research projects:
+Around 2–5 researchers
+For major observatories or survey collaborations:
+Dozens to hundreds of people
+Large projects often divide responsibilities:
+Signal processing
+Calibration
+Software engineering
+Machine learning
+Verification
+Astrophysics interpretation
+
+5. Are there any current tools you use to decrease the amount of time it takes to analyse the data?
+Yes, heavily.
+Some examples:
+Automated RFI filtering
+Batch-processing pipelines
+GPU acceleration
+Machine learning classifiers
+Automated pulsar search pipelines
+Fourier transform acceleration libraries
+Tools commonly used:
+CASA
+Astropy
+TensorFlow/PyTorch for ML
+PRESTO
+HEASoft
+CUDA acceleration
+Jupyter notebooks for rapid analysis
+A lot of observatories now rely on automated pipelines because the data volume is too large for manual inspection alone.
+
+6. Do you currently use any visualisation software for the sky? AKA software like Stellarium.
+Yes. Visualisation software is extremely useful for planning observations and understanding where signals originate.
+Common software includes:
+Stellarium
+Celestia
+Aladin Sky Atlas
+SAOImage DS9
+CARTA
+
+7. If so, how do you use it personally?
+I mainly use visualisation software to:
+Plan telescope pointing
+Track object positions
+Verify whether signals line up with known sources
+Overlay catalogues onto observations
+Compare radio maps with optical images
+For example, if I detect a strong hydrogen signal, I might use sky visualisation tools to see whether the telescope was pointed near the galactic plane.
+I also use waterfall plots and spectrum visualisers constantly while monitoring live observations.
+
+8. What would your ideal data analysis software be for radio telescope data?
+My ideal software would combine:
+Real-time signal visualisation
+Automated RFI filtering
+AI-assisted anomaly detection
+Sky-map integration
+Easy scripting support
+GPU acceleration
+Simple UI for beginners
+Advanced tools for researchers
+Ideally it would:
+Accept raw SDR or telescope input directly
+Automatically calibrate observations
+Highlight unusual detections
+Correlate signals with known astronomical databases
+Generate publication-ready graphs automatically
+A modular system would be ideal so hobbyists and professionals could both use it.
+
+9. If this software were to be created, how would you use it to help you?
+I would use it to:
+Reduce manual filtering time
+Detect weak or unusual signals faster
+Automate repetitive processing steps
+Compare observations against sky databases instantly
+Run long observations unattended
+Share reproducible workflows with collaborators
+For education and outreach, it would also help beginners understand radio astronomy much faster through live visual feedback.
+
+10. Do you currently use AI to help analyse big sets of data to decrease time and/or cost?
+Yes, AI and machine learning are becoming increasingly common.
+Current uses include:
+Pulsar candidate classification
+Fast Radio Burst detection
+RFI identification
+Signal anomaly detection
+Image denoising
+Survey classification
+However, AI is usually used as an assistant rather than a replacement for researchers. False positives are still a major issue, especially with noisy radio data.
+In hobby radio astronomy, AI adoption is still relatively limited, but it is growing quickly because GPUs and machine learning tools are becoming more accessible.

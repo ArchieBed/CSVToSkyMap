@@ -1,0 +1,59 @@
+Q1 — How often do you analyse radio telescope data?
+Daily: 6
+Weekly: 8
+Monthly: 4
+Rarely: 2
+
+Q2 — What type of radio telescope setup do you mainly use?
+SDR/Home setup: 6
+University telescope: 5
+Observatory array: 5
+Public datasets only: 4
+
+Q3 — What file formats do you work with most often?
+FITS: 12
+CSV/Text: 5
+Binary/raw data: 3
+
+Q4 — What is usually the most time-consuming part?
+Calibration: 5
+Noise/RFI removal: 6
+Visual inspection: 4
+Processing large datasets: 5
+
+Q5 — On average, how long does one analysis session take?
+Under 1 hour: 4
+1–5 hours: 6
+5–24 hours: 5
+Multiple days: 5
+
+Q6 — Which software tools do you currently use most?
+Python/Astropy: 7
+CASA: 6
+GNU Radio: 3
+Stellarium/visualisation software: 4
+
+Q7 — Do you currently use AI or machine learning?
+Yes regularly: 6
+Sometimes: 6
+Experimentally: 3
+No: 5
+
+Q8 — What feature would most improve workflow?
+Faster processing: 5
+Better visualisation: 3
+Automated detection: 5
+Easier data organisation: 4
+AI assistance: 3
+
+Q9 — How important is real-time visualisation?
+Very important: 11
+Somewhat important: 6
+Not very important: 2
+Not needed: 1
+
+Q10 — Would you use an all-in-one analysis platform?
+Definitely: 11
+Probably: 5
+Maybe: 4
+No: 0

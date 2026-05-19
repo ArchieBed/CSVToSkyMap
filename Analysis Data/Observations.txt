@@ -1,0 +1,15 @@
+Researchers regularly spend large amounts of time cleaning noisy data before analysis can begin.
+Many users switch between multiple software programs during a single analysis session.
+Telescope data is often processed overnight due to large file sizes.
+Users frequently monitor live signal graphs and waterfall displays while collecting data.
+Manual checking is still commonly used to confirm unusual detections.
+Most hobbyists use Python scripts or pre-made pipelines to automate repetitive tasks.
+Researchers often compare observations with online sky catalogues and maps.
+Data organisation and file management can become difficult during long observation sessions.
+Observatory users commonly work in teams, while hobbyists usually work alone.
+Calibration and interference filtering are repeated for nearly every observation session.
+Users often leave systems recording for hours without supervision.
+Real-time visualisation tools help users quickly identify signal changes or interference.
+Many researchers document observations using spreadsheets, notebooks, or Jupyter notebooks.
+Processing large datasets can slow down computers significantly during analysis.
+Users frequently rerun processing steps after adjusting filters or calibration settings.

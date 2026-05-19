@@ -1,0 +1,42 @@
+Interview Questions
+
+What kind of data do you collect from radio telescopes (file type, frequency, objects, mapping)?
+(This question allows me to gather what data is used normally)
+
+
+What is your normal method when analysing said data?
+(This question allows me to gather the standard analysis of data method)
+
+
+How long does analysing the data take on average?
+(This question allows me to gather the time it takes of normal methods)
+
+
+When analysing data, on average, how many people does it take to analyse the data with you?
+(This question allows me to gather how many people it normally takes to turn the data into information)
+
+
+Are there any current tools you use to decrease the amount of time it takes to analyse the data?
+(This question allows me to gather what tools are currently available to use. I will hopefully use these other softwares to model my own software)
+
+
+Do you currently use any visualisation software for the sky? AKA software like stellarium.
+(This question allows me to gather what kind of visualisation tool is standard)
+
+
+If so, how do you use it personally?
+(This question allows me to gather how do they normally use the software)
+
+
+What would your ideal data analysis software be for radio telescope data?
+(This question allows me to gather what kind of software they want)
+
+
+If this software were to be created, how would you use it to help you?
+(This question allows me to gather how they would utilize the software)
+
+
+Do you currently use AI to help analyse big sets of data to decrease time and/or cost?
+(This question allows me to gather if AI is becoming prominent in the user space. Not really important, just a question that allows me to see what the market is currently)
+
+
