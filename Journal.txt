@@ -30,3 +30,18 @@ It also seems that the interview kept referencing astropy. https://www.astropy.o
 In the next question it seems they also want an integration with a sky map and data mainly to reduce time and compare data quickly. 
 And then in the last question it shows that AI is being used to detect anomalies.
 
+May 20 2026:
+	I’ve made the SRS for the project. I’m looking at astropy and it seems like its a big library for astronomy. Looks interesting though I would like a library that can take some variables and convert that into a skymap and can update depending on the variable I put in real time.
+
+May 25 2026: 
+	I have finished off my DFD diagram and now I am going into the design stage. I am thinking of an idea currently. I would like to create an application that would work as a multi tool software solution. This would include a visualisation of the sky, a graph to plot the given data, a noise remover and a playback feature to compare the graph data to the visual sky map. I think this is helpful because a lot of the analysis data that was received was talking about multiple apps that are needed to analyse the data itself.
+In terms of these ideas. I need to think about efficiency. Overall the time I have to complete this is actually a fair amount of time, with that of developing the code having 5 weeks which is plenty of time. The amount of money this project will cost will be zero (except the food i will consume while making the project) and the effort is actually not too high because of the vast amount of libraries the python code has to offer.
+For the effectiveness of the solution idea I have come up with. The UI design would be fairly readable which overall makes it accessible to people who have for example dyslexia. For clarity in effectiveness most of the labels will be clear to the average user but the overall idea of the software would be tailored to people with more knowledge on radio telescope data. Furthermore, in terms of the functional requirements stated, this idea has everything that is needed that was detailed in the SRS.
+I think I should go with this idea:
+The Multitool Radio Astronomy Analysis Application (TMR Triple A)
+Visual skymap
+Auto plot from data
+Auto noise remover button along with customization
+A playback feature
+A log feature that can save information on points on graphs and written responses
+
