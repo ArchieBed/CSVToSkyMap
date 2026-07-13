@@ -28,7 +28,7 @@ ALADIN_HTML = """
                 survey: "https://alasky.cds.unistra.fr/DSS/DSSColor/",
                 fov: 16,  <!-- CHANGE FOV TO WHAT THE TELESCOPE IS!!! -->             
                 target: "0, 0",
-                showCooGrid: true,
+                showCooGrid: false,  <!-- i dont like it on personally -->    
                 showReticle: true     
             });
         });
@@ -50,11 +50,11 @@ def run_server(): # this command will start it up
 
 # this class is to project the html page on a QWebEngine viewer
 class SkyViewport(QMainWindow):
-    def __init__(self, ra_list, dec_list):
+    def __init__(self, ra_list, dec_list, WIDTH, HEIGHT):
         super().__init__() #QMainWindow init for its class
         #sets up window
         self.setWindowTitle("skymap")
-        self.setGeometry(100, 100, 1000, 700) 
+        self.setGeometry(0, 0, WIDTH, HEIGHT) 
 
         #gets the ra and dec lists from parametres
         self.ra_list = ra_list if ra_list else []

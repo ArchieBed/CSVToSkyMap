@@ -32,7 +32,7 @@ threading.Thread(target=run_server, daemon=True).start() # creates a thread to r
 
 #here is the creation of the window to show the skymap
 app = QApplication(sys.argv)
-window = SkyViewport(ra_list, dec_list)
+window = SkyViewport(ra_list, dec_list, 600, 600)
 window.show()
 
 
