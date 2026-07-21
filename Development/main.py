@@ -6,25 +6,34 @@ import sys
 import threading
 from Visualisation import MainWindow, run_server
 from PyQt6.QtWidgets import QApplication
+from ImportWindow import ImportWindow
 
 
-# LAT AND LON VERY IMPORTANTTTTT
-OBSERVER_LAT = -37.8136
-OBSERVER_LON = 144.9631
+threading.Thread(target=run_server, daemon=True).start() # starts a thread to run the surver
+app = QApplication(sys.argv) # creates an app instance
 
-radio_data_file = "17-05-26.csv" #the chosen radio file
+import_window = ImportWindow() # starts the import csv window
+if not getattr(import_window, "csv_path", ""):
+    sys.exit()
+
+#the radio file becomes what ever the user set
+radio_data_file = import_window.csv_path
+try:
+    OBSERVER_LAT = float(import_window.lat) #lat
+    OBSERVER_LON = float(import_window.lon) #lon
+except ValueError:
+    sys.exit()
+
+xml_path = import_window.xml_path #xml path or creates one if there is no path selected
+
+# then use radio_data_file, OBSERVER_LAT, OBSERVER_LON
+radioData = RadioData(radio_data_file)
+power_list = radioData.file_to_power_list()
+time_list = radioData.file_to_time_list()
+ra_list, dec_list = radioData.file_to_coords(OBSERVER_LAT, OBSERVER_LON)
 
 #this creates the graph
 fig, ax = plt.subplots()
-
-radioData = RadioData(radio_data_file) #creates an object using the file
-
-# power and time list for the points for graph
-power_list = radioData.file_to_power_list()
-time_list = radioData.file_to_time_list()
-
-# ra list and dec list to move the skymap
-ra_list, dec_list = radioData.file_to_coords(OBSERVER_LAT, OBSERVER_LON)
 
 # takes the length of the time_list and makes a list of like 0,1,2,3 and so on till the length of the time_list
 indices_x = list(range(len(time_list)))
@@ -44,14 +53,8 @@ ax.xaxis.set_major_formatter(FixedFormatter(tick_labels))
 
 # changes the labale size of both axies to fit the size of the graph
 ax.tick_params(axis='both', labelsize=3)
-fig.tight_layout() 
-
-threading.Thread(target=run_server, daemon=True).start() # creates a thread to run a local server for the skymap
-app = QApplication(sys.argv)
-
-# creates the mainwindow from the class pbject
+fig.tight_layout()
 window = MainWindow(radio_data_file, ra_list, dec_list, indices_x, time_list, power_list, fig, ax, line, 1200, 600)
 window.show()
-
 
 sys.exit(app.exec()) #exit app when the window is closed

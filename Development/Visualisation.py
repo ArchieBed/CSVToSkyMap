@@ -155,6 +155,10 @@ class MainWindow(QMainWindow):
                 # refreaes the table to display the new infomation
                 self.refresh_log_table()
 
+    def on_cell_click(self, ra, dec):
+        js_script = f"if (typeof aladin !== 'undefined') {{ aladin.gotoRaDec({ra}, {dec}); }}" #
+        self.web_view.page().runJavaScript(js_script) 
+
     # here is the function to refresh the table and query the xml reader
     def refresh_log_table(self):
         logged_items = self.logger.get_all_logged_points()

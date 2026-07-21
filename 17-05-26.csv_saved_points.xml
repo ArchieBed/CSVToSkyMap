@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<UserSelectedPoints>
+    <SavedPoint>
+        <LogDate>2026-07-21</LogDate>
+        <DataTime>14:09:32.367</DataTime>
+        <PowerDBFS>-44.24565505981445</PowerDBFS>
+        <RightAscension>81.2645</RightAscension>
+        <Declination>-37.0000</Declination>
+    </SavedPoint>
+    <SavedPoint>
+        <LogDate>2026-07-21</LogDate>
+        <DataTime>14:33:33.761</DataTime>
+        <PowerDBFS>-44.24142837524414</PowerDBFS>
+        <RightAscension>87.2868</RightAscension>
+        <Declination>-37.0000</Declination>
+    </SavedPoint>
+    <SavedPoint>
+        <LogDate>2026-07-21</LogDate>
+        <DataTime>15:47:38.007</DataTime>
+        <PowerDBFS>-44.24687576293945</PowerDBFS>
+        <RightAscension>105.8552</RightAscension>
+        <Declination>-37.0000</Declination>
+    </SavedPoint>
+    <SavedPoint>
+        <LogDate>2026-07-21</LogDate>
+        <DataTime>16:24:55.956</DataTime>
+        <PowerDBFS>-44.2519645690918</PowerDBFS>
+        <RightAscension>115.2055</RightAscension>
+        <Declination>-37.0000</Declination>
+    </SavedPoint>
+</UserSelectedPoints>
