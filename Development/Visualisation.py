@@ -85,7 +85,7 @@ class MainWindow(QMainWindow):
         # this embeds the skymap and creates it in the software window
         self.web_view = QWebEngineView()         
         self.web_view.load(QUrl("http://127.0.0.1:8085")) 
-        self.web_view.setFixedSize(600, 450)
+        self.web_view.setFixedSize(600, 800)
         base_layout.addWidget(self.web_view)
 
         # this sets the right side layout to stack the graph ontop of the logging system
@@ -132,7 +132,7 @@ class MainWindow(QMainWindow):
             if 0 <= idx < len(self.numeric_timestamps):
                 timestamp = self.actual_time_list[idx]
                 power_val = sel.target[1]
-                sel.annotation.set_text(f"Time: {timestamp}\nPower: {power_val:.2f} dBFS")
+                sel.annotation.set_text(f"Time: {timestamp}\nPower: {power_val} dBFS")
 
         # connects the click event to what we want happen
         self.canvas.mpl_connect('pick_event', self.on_graph_click)

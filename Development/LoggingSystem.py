@@ -42,7 +42,7 @@ class XmlLogger:
         entry = ET.SubElement(root, "SavedPoint")
         ET.SubElement(entry, "LogDate").text = log_date
         ET.SubElement(entry, "DataTime").text = str(time_str)
-        ET.SubElement(entry, "PowerDBFS").text = f"{power_val:.2f}"
+        ET.SubElement(entry, "PowerDBFS").text = f"{power_val}"
         ET.SubElement(entry, "RightAscension").text = f"{ra_val:.4f}"
         ET.SubElement(entry, "Declination").text = f"{dec_val:.4f}"
 
