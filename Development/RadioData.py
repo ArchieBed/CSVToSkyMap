@@ -6,9 +6,6 @@ import datetime
 class RadioData():
     def __init__(self, radio_data_file):
         self.radio_data_file = pd.read_csv(radio_data_file) #i love pandas for csv files
-        # lists for the logging system
-        self.timestamps = []
-        self.custom_filters = []
 
     # i was checking if it can read the file. it can. ill leave it here
     def read_file(self):
@@ -22,6 +19,7 @@ class RadioData():
     
     # takes the time coloum and returns a list
     def file_to_time_list(self):
+        #self.radio_data_file['Time'] = pd.to_datetime(self.radio_data_file['Time'])
         time_list = self.radio_data_file['Time'].values.tolist()
         return time_list
     
